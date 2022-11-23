@@ -1,0 +1,226 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(./img/FB_IMG_1669019583295.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.next{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 40vh;
+    color: #cccc;
+}
+.next button{
+    height: 30px;
+    width: 80px;
+    border-radius: 8px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    color: #cccc;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    background: lightcoral;
+}
+.navv ul{
+    display: flex;
+    list-style: none;
+    padding: 5px;
+}
+.navv ul li a{
+    color: black;
+    text-decoration: none;
+    margin: 20px;
+}
+/* end of nav */
+.who{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+}
+.we h4, h1{
+    font-weight: bold;
+    margin-top: 20px;
+}
+.we p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+
+}
+.image{
+    height: 80vh;
+    width: 200%;
+    background: url('./img/FB_IMG_1667994916673.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.we button{
+    margin-top: 100px;
+    border: 0;
+    border-radius: 10px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    background: transparent;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+}
+/* end of who we are */
+.work{
+    padding: 10px;
+    margin: 10px;
+}
+.our{
+    text-align: center;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 30px;
+}
+h4{
+    color: orange;
+}
+.spec{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.design{
+    display: flex;
+    justify-content: space-between;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.col{
+    width: 23%;
+}
+/* end of work */
+.team{
+    padding: 10px;
+    margin: 10px;
+}
+.ourTeam{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+}
+.btn button{
+    border: 0;
+    border-radius: 10px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    background: transparent;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+}
+.img{
+    display: flex;
+    justify-content: space-between;
+}
+.pic{
+    width: 31%;
+    height: 80vh;
+
+}
+.p1{
+    background: url('./img/FB_IMG_1662966062937.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.p2{
+    background: url('./img/FB_IMG_1667218464456.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.p3{
+    background: url('./img/FB_IMG_1667193043211.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.fa-home, .fa-building, .fa-university, .fa-hospital{
+    font-size: 100px;
+}
+
+
+
+
+@media screen and (max-width: 600px){
+    .nav{
+        flex-direction: column;
+        width: 100;
+    }
+    .navv ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    .who{
+        flex-direction: column;
+        width: 100%;
+    }
+    .image{
+        height: 80vh;
+        width: 100%;
+        background: url('./img/FB_IMG_1667994916673.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .our, .spec{
+        text-align: center;
+    }
+    .design{
+        flex-direction: column;
+        width: 100%;
+    }
+    .col{
+        width: 100%;
+        text-align: center;
+    }
+    h4, h1{
+        text-align: center;
+    }
+    .ourTeam{
+        flex-direction: column;
+        width: 100%;
+    }
+    .img{
+        flex-direction: column;
+        width: 100%;
+    }
+    .pic{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .next, .we, button{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .btn button{
+        text-align: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .fa-home, .fa-building, .fa-university, .fa-hospital{
+        margin: 0 auto;
+    }
+}
